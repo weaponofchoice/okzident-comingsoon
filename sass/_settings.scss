@@ -1,0 +1,30 @@
+html {
+  // Browsers default the font-size of the html element to 16px, so setting the font-size to 62.5%
+  // gives an easy to work with 10px base value. Working from there, rem (root element font-size)
+  // will always be x * 10.
+  font-size: 62.5%; // (10px)
+  height: 100%;
+}
+
+body {
+  color: $white;
+  font-size: 1.8rem; // 18px fontsize
+  line-height: 1.5em; //with leading of 150% == 27px
+  height: 100%;
+  -webkit-font-smoothing: auto;
+}
+img, iframe, video{width: auto; max-width: 100%; height: auto; margin: 0; display: block;}
+
+// Box Sizing
+//----------------------------------------------------------------------------------------------------
+* {
+  @include box-sizing(border-box);
+}
+
+// General break points
+//----------------------------------------------------------------------------------------------------
+$phone-width: 480px;
+$media-query-small: 769px;
+$media-query-medium: 1025px;
+$media-query-large: 1281px;
+$media-query-largest: 1441px;

@@ -1,0 +1,9 @@
+@mixin neuzeit-bold {
+  font-family: 'NeuzeitGro-Bol', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin neuzeit-regular {
+  font-family: 'NeuzeitGro-Reg', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,111 @@
+body {
+  background: image-url("bg_2x.jpg") no-repeat center center;
+  background-size: cover;
+  height: auto;
+  font-family: 'NeuzeitGro-Bol', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#main {
+  margin: 10% auto 4rem;
+  width: 80%;
+  img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  h1, 
+  h2 {
+    display: none;
+  }
+  #mc_embed_signup {
+    margin: 10% auto 0;
+    width: 100%;
+    
+    h3 {
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+    input {
+      @include neuzeit-regular;
+      @include placeholder($white);
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      text-transform: uppercase;
+      line-height: 4.2rem;
+      height: 4.2rem;
+      width: 100%;
+      @include transition-property(border-color);
+      @include transition-duration(.2s);
+      @include transition-timing-function(ease-in-out);
+      transition-duration: .2s;
+      
+      &:focus {
+        border-color: $black;
+        outline: none;
+      }
+    }
+    input[type="submit"] {
+      background-color: $white;
+      color: $black;
+      max-width: 50%;
+      margin: 0 auto;
+      display: block;
+      @include transition-property(background-color);
+      @include transition-duration(.2s);
+      @include transition-timing-function(ease-in-out);
+      transition-duration: .2s;
+      &:hover {
+        background-color: black;
+        color: $white;
+      }
+    }
+  }
+  .social {
+    text-align: center;
+    margin: 6rem auto 0;
+  }
+  .button {
+    @include transition-property(background-color);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in-out);
+    transition-duration: .2s;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid $white;
+    border-radius: 100%;
+    margin: 0 1rem;
+    background: no-repeat center center;
+    
+    span { display: none; }
+    &:hover {
+      background-color: black;
+    }
+    &#instagram {
+      background-image: inline-image("glyphs/instagram.svg");
+      background-size: 55%;
+    }
+    &#tumblr {
+      background-image: inline-image("glyphs/tumblr.svg");
+      background-size: 40%;
+    }
+  }
+}
+
+@include min-screen($phone-width) {
+  #main {
+    width: 40%; 
+    #mc_embed_signup {
+      max-width: 60%;
+      input[type="signup"] {
+        max-width: 25%;
+      }
+    }
+  }
+}
