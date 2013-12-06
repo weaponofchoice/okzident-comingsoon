@@ -1,0 +1,18 @@
+{
+  "fonts": [
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom_aab300dea2fb10b45deee98a61074d1c.ttf",
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom_aab300dea2fb10b45deee98a61074d1c.woff",
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom_aab300dea2fb10b45deee98a61074d1c.eot",
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom_aab300dea2fb10b45deee98a61074d1c.svg"
+  ],
+  "templates": [
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom.css",
+    "/Users/Erik/Dropbox/Sites/okzident/comingsoon/fontcustom/fontcustom-preview.html"
+  ],
+  "glyphs": [
+    "instagram",
+    "okzident-logo",
+    "okzident-mark",
+    "tumblr"
+  ]
+}

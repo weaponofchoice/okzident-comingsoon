@@ -12,19 +12,12 @@ body {
     margin: 0 auto;
     width: 100%;
   }
-  h1, 
-  h2 {
-    display: none;
-  }
   #mc_embed_signup {
     margin: 10% auto 0;
     width: 100%;
-    
-    h3 {
-      color: $white;
+    h3 { 
       text-align: center;
-      text-transform: uppercase;
-      font-size: 1.8rem;
+      color: $white;
     }
     input {
       @include neuzeit-regular;
@@ -96,6 +89,17 @@ body {
       background-size: 40%;
     }
   }
+}
+.panel {
+  margin: 0 auto;
+  max-width: 54rem;
+  background-color: $white;
+  padding: 4.5rem 6rem;
+  
+  .logo { 
+    max-width: 25%;
+  }
+  h2 { margin: 5.7rem 0 .7rem; }
 }
 
 @include min-screen($phone-width) {
