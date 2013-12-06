@@ -1,9 +1,39 @@
 @mixin neuzeit-bold {
   font-family: 'NeuzeitGro-Bol', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @mixin neuzeit-regular {
   font-family: 'NeuzeitGro-Reg', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+
+@mixin kepler-regular {
+  font-family: 'kepler-std', 'Georgia', serif;
+  font-weight: 400;
+}
+
+@mixin kepler-bold {
+  font-family: 'kepler-std', 'Georgia', serif;
+  font-weight: 700;
+}
+
+h2 {
+  @include neuzeit-bold;
+  font-size: 2.8rem;
+  color: $textcolor;
+}
+
+h3 {
+    @include neuzeit-bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $textcolor
+}
+
+p {
+  @include kepler-regular;
+  font-size: 1.8rem;
+  line-height: 140%;
+  color: $textcolor;
 }
