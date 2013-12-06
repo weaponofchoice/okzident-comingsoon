@@ -7,3 +7,13 @@
   font-family: 'NeuzeitGro-Reg', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
+
+@mixin kepler-regular {
+  font-family: 'kepler-std', 'Georgia', serif;
+  font-weight: 400;
+}
+
+@mixin kepler-bold {
+  font-family: 'kepler-std', 'Georgia', serif;
+  font-weight: 700;
+}
