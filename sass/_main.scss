@@ -1,0 +1,33 @@
+body {
+  background: image-url("bg_2x.jpg") no-repeat center center;
+  background-size: cover;
+  height: auto;
+  font-family: 'NeuzeitGro-Bol', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#main{
+  max-width: 450px;
+  padding: 40px 60px;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  @include transform(translateY(-50%));
+  background: $white;
+}
+
+#main img{
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+#main div{
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#main div p{
+  margin: 0;
+}
